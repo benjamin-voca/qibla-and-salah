@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0b0d10"/>
+  <!-- progress crescent: track + fill, like the app's main screen -->
+  <defs>
+    <mask id="cres">
+      <rect width="512" height="512" fill="black"/>
+      <circle cx="256" cy="256" r="196" fill="white"/>
+      <circle cx="256" cy="300" r="194" fill="black"/>
+    </mask>
+  </defs>
+  <g mask="url(#cres)">
+    <rect width="512" height="512" fill="#262a31"/>
+    <path d="M256 256 L40 256 A216 216 0 0 1 380 80 Z" fill="#34d399"/>
+  </g>
+  <circle cx="352" cy="88" r="15" fill="#34d399"/>
+  <circle cx="352" cy="88" r="6" fill="#ffffff"/>
+  <!-- small moon -->
+  <circle cx="256" cy="300" r="78" fill="#e9c46a"/>
+  <circle cx="290" cy="280" r="68" fill="#0b0d10"/>
+</svg>

@@ -1,0 +1,143 @@
+<strings>
+    <string id="AppName" scope="glance">Qibla and Salah</string>
+
+    <!-- Prayer and time names (used by the background notifications too) -->
+    <string id="Fajr" scope="background">Фаджр</string>
+    <string id="Dhuhr" scope="background">Зухр</string>
+    <string id="Asr" scope="background">Аср</string>
+    <string id="Maghrib" scope="background">Магриб</string>
+    <string id="Isha" scope="background">Иша</string>
+    <string id="Imsak">Имсак</string>
+    <string id="Sunrise">Восход</string>
+    <string id="Midnight">Полночь</string>
+
+    <!-- Notifications ($1$ = time or minutes) -->
+    <string id="NotifStarted" scope="background">Время наступило · до $1$</string>
+    <string id="NotifEnds" scope="background">Конец через $1$ мин · совершён?</string>
+    <string id="ActPrayed" scope="background">Совершён</string>
+    <string id="ActNotYet" scope="background">Ещё нет</string>
+    <string id="WatchLocation" scope="background">Позиция часов</string>
+    <string id="NotSet" scope="background">Не задано</string>
+
+    <!-- Glance -->
+    <string id="GlEnds" scope="glance">конец $1$</string>
+    <string id="GlStarts" scope="glance">начало $1$</string>
+    <string id="GlIn" scope="glance">через $1$</string>
+    <string id="GlPrayed" scope="glance">совершён</string>
+    <string id="GlNoLocation" scope="glance">Задать место</string>
+
+    <!-- Main pages -->
+    <string id="LblTimeLeft">ОСТАЛОСЬ</string>
+    <string id="LblPrayed">СОВЕРШЁН</string>
+    <string id="LblNext">СЛЕД. НАМАЗ</string>
+    <string id="UnitHours">ч осталось</string>
+    <string id="UnitMinutes">мин осталось</string>
+    <string id="Ends">конец $1$</string>
+    <string id="Starts">начало $1$</string>
+    <string id="Qibla">КИБЛА</string>
+    <string id="FacingQibla">Лицом к Кибле</string>
+    <string id="NoCompass">Нет компаса · С вверху</string>
+    <string id="CompassPoints">С,СВ,В,ЮВ,Ю,ЮЗ,З,СЗ</string>
+    <string id="PrayedToday">совершено сегодня</string>
+    <string id="StreakOne">Все пять: 1 день</string>
+    <string id="StreakMany">Все пять: $1$ дн.</string>
+    <string id="Today">Сегодня</string>
+    <string id="NeedLocation">Нужно местоположение</string>
+    <string id="NeedLocationHint">Удерживайте нижнюю кнопку и выберите «Местоположение» или задайте его в приложении Garmin Connect.</string>
+    <string id="HijriMonths">Мухаррам,Сафар,Раби аль-авваль,Раби ас-сани,Джумада аль-уля,Джумада ас-сани,Раджаб,Шаабан,Рамадан,Шавваль,Зуль-каада,Зуль-хиджа</string>
+
+    <!-- On-watch settings menu -->
+    <string id="WarningTime">Время напоминания</string>
+    <string id="AlertAtStart">Оповещать о начале</string>
+    <string id="Location">Местоположение</string>
+    <string id="Calculation">Расчёт</string>
+    <string id="WarnBeforeEnd">Напомнить до конца</string>
+    <string id="AllPrayers">Все намазы</string>
+    <string id="Off">Выкл.</string>
+    <string id="MinBeforeEnd">За $1$ мин до конца</string>
+    <string id="MinShort">$1$ мин</string>
+    <string id="DifferentPerPrayer">Для каждого отдельно</string>
+    <string id="ChooseCity">Выбрать город</string>
+    <string id="GetGpsFix">Определить по GPS</string>
+    <string id="GpsHint">Выйдите на улицу, ~1 мин</string>
+    <string id="Searching">Поиск…</string>
+    <string id="GotFix">Получено: $1$</string>
+    <string id="UseWatchLocation">Позиция часов</string>
+    <string id="LastKnown">Последняя позиция</string>
+    <string id="CalcMethod">Метод</string>
+    <string id="Automatic">Автоматически</string>
+    <string id="AutoWith">Авто · $1$</string>
+    <string id="AsrSchool">Аср</string>
+    <string id="Standard">Стандартный</string>
+    <string id="Hanafi">Ханафитский</string>
+    <string id="IshaEndsAt">Конец Иша</string>
+    <string id="IslamicMidnight">Шариатская полночь</string>
+    <string id="FineTune">Поправка в минутах</string>
+    <string id="InPhoneApp">В приложении Garmin Connect</string>
+    <string id="HighLat">Высокие широты</string>
+    <string id="HlMiddle">Середина ночи</string>
+    <string id="HlSeventh">Седьмая часть ночи</string>
+    <string id="HlAngle">По углу</string>
+    <string id="HijriDate">Дата по хиджре</string>
+    <string id="Days">$1$ дн.</string>
+
+    <!-- City regions -->
+    <string id="RegKosovo">Косово</string>
+    <string id="RegBalkans">Балканы и Турция</string>
+    <string id="RegEurope">Европа</string>
+    <string id="RegMiddleEast">Ближний Восток</string>
+    <string id="RegAfrica">Африка</string>
+    <string id="RegAsia">Азия</string>
+    <string id="RegAmericas">Америка</string>
+    <string id="RegOceania">Океания</string>
+
+    <!-- Calculation methods -->
+    <string id="M0">Diyanet (Турция)</string>
+    <string id="M1">Всемирная исламская лига</string>
+    <string id="M2">ISNA (Северная Америка)</string>
+    <string id="M3">Египетское ведомство</string>
+    <string id="M4">Карачи</string>
+    <string id="M5">Умм аль-Кура (Мекка)</string>
+    <string id="M6">Косово (BIK takvim)</string>
+    <string id="M7">Тегеран (Геофизика)</string>
+    <string id="M8">Шииты-джафариты (Кум)</string>
+    <string id="M9">Страны Залива</string>
+    <string id="M10">Кувейт</string>
+    <string id="M11">Катар</string>
+    <string id="M12">Сингапур (MUIS)</string>
+    <string id="M13">Франция (UOIF)</string>
+    <string id="M14">Россия</string>
+    <string id="M15">Дубай</string>
+    <string id="M16">Малайзия (JAKIM)</string>
+    <string id="M17">Тунис</string>
+    <string id="M18">Алжир</string>
+    <string id="M19">Индонезия (Kemenag)</string>
+    <string id="M20">Марокко</string>
+    <string id="M21">Португалия (Лиссабон)</string>
+    <string id="M22">Иордания</string>
+
+    <!-- Phone (Garmin Connect) settings -->
+    <string id="SetUseGps" scope="settings">Использовать позицию часов</string>
+    <string id="SetLatitude" scope="settings">Широта (если позиция часов не используется)</string>
+    <string id="SetLongitude" scope="settings">Долгота</string>
+    <string id="SetMethod" scope="settings">Метод расчёта</string>
+    <string id="SetTune" scope="settings">Доп. минуты: имсак,фаджр,восход,зухр,аср,магриб,закат,иша,полночь</string>
+    <string id="SetAsr" scope="settings">Расчёт Асра</string>
+    <string id="SetHighLat" scope="settings">Правило для высоких широт</string>
+    <string id="SetIshaEnd" scope="settings">Конец Иша</string>
+    <string id="SetHijri" scope="settings">Поправка даты по хиджре (дни)</string>
+    <string id="SetNotifyStart" scope="settings">Уведомлять о наступлении времени намаза</string>
+    <string id="SetWarnFajr" scope="settings">Фаджр: напомнить за N минут до конца (0 = выкл.)</string>
+    <string id="SetWarnDhuhr" scope="settings">Зухр: напомнить за N минут до конца (0 = выкл.)</string>
+    <string id="SetWarnAsr" scope="settings">Аср: напомнить за N минут до конца (0 = выкл.)</string>
+    <string id="SetWarnMaghrib" scope="settings">Магриб: напомнить за N минут до конца (0 = выкл.)</string>
+    <string id="SetWarnIsha" scope="settings">Иша: напомнить за N минут до конца (0 = выкл.)</string>
+    <string id="OptAuto" scope="settings">Автоматически (по местоположению)</string>
+    <string id="OptStandard" scope="settings">Стандартный (шафиитский, маликитский, ханбалитский)</string>
+    <string id="OptHanafi" scope="settings">Ханафитский</string>
+    <string id="OptMiddle" scope="settings">Середина ночи</string>
+    <string id="OptSeventh" scope="settings">Седьмая часть ночи</string>
+    <string id="OptAngle" scope="settings">По углу</string>
+    <string id="OptMidnight" scope="settings">Шариатская полночь</string>
+    <string id="OptFajr" scope="settings">Фаджр</string>
+</strings>

@@ -1,0 +1,20 @@
+<properties>
+    <property id="useGps" type="boolean">true</property>
+    <property id="latitude" type="float">0.0</property>
+    <property id="longitude" type="float">0.0</property>
+    <!-- -1 = automatic by location; otherwise an index into PrayerCalc.METHODS -->
+    <property id="method" type="number">-1</property>
+    <property id="tune" type="string">0,0,0,0,0,0,0,0,0</property>
+    <!-- 0 auto, 1 standard, 2 Hanafi -->
+    <property id="asrSchool" type="number">0</property>
+    <!-- 0 auto (angle-based), 1 middle of night, 2 one-seventh, 3 angle-based -->
+    <property id="highLat" type="number">0</property>
+    <property id="ishaEnd" type="number">0</property>
+    <property id="hijriAdjust" type="number">0</property>
+    <property id="notifyAtStart" type="boolean">true</property>
+    <property id="warnFajr" type="number">20</property>
+    <property id="warnDhuhr" type="number">20</property>
+    <property id="warnAsr" type="number">20</property>
+    <property id="warnMaghrib" type="number">20</property>
+    <property id="warnIsha" type="number">20</property>
+</properties>

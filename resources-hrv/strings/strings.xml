@@ -1,0 +1,143 @@
+<strings>
+    <string id="AppName" scope="glance">Qibla and Salah</string>
+
+    <!-- Prayer and time names (used by the background notifications too) -->
+    <string id="Fajr" scope="background">Sabah</string>
+    <string id="Dhuhr" scope="background">Podne</string>
+    <string id="Asr" scope="background">Ikindija</string>
+    <string id="Maghrib" scope="background">Akšam</string>
+    <string id="Isha" scope="background">Jacija</string>
+    <string id="Imsak">Zora</string>
+    <string id="Sunrise">Izlazak sunca</string>
+    <string id="Midnight">Ponoć</string>
+
+    <!-- Notifications ($1$ = time or minutes) -->
+    <string id="NotifStarted" scope="background">Vakat nastupio · do $1$</string>
+    <string id="NotifEnds" scope="background">Ističe za $1$ min · klanjano?</string>
+    <string id="ActPrayed" scope="background">Klanjano</string>
+    <string id="ActNotYet" scope="background">Još ne</string>
+    <string id="WatchLocation" scope="background">Lokacija sata</string>
+    <string id="NotSet" scope="background">Nije postavljeno</string>
+
+    <!-- Glance -->
+    <string id="GlEnds" scope="glance">ističe $1$</string>
+    <string id="GlStarts" scope="glance">počinje $1$</string>
+    <string id="GlIn" scope="glance">za $1$</string>
+    <string id="GlPrayed" scope="glance">klanjano</string>
+    <string id="GlNoLocation" scope="glance">Postavi lokaciju</string>
+
+    <!-- Main pages -->
+    <string id="LblTimeLeft">PREOSTALO ZA</string>
+    <string id="LblPrayed">KLANJANO</string>
+    <string id="LblNext">SLJEDEĆI NAMAZ</string>
+    <string id="UnitHours">h preostalo</string>
+    <string id="UnitMinutes">min preostalo</string>
+    <string id="Ends">ističe $1$</string>
+    <string id="Starts">počinje $1$</string>
+    <string id="Qibla">KIBLA</string>
+    <string id="FacingQibla">Okrenut kibli</string>
+    <string id="NoCompass">Nema kompasa · S je gore</string>
+    <string id="CompassPoints">S,SI,I,JI,J,JZ,Z,SZ</string>
+    <string id="PrayedToday">klanjano danas</string>
+    <string id="StreakOne">1 dan svih pet</string>
+    <string id="StreakMany">$1$ dana svih pet</string>
+    <string id="Today">Danas</string>
+    <string id="NeedLocation">Potrebna lokacija</string>
+    <string id="NeedLocationHint">Držite donje dugme i odaberite Lokacija ili je postavite u aplikaciji Garmin Connect.</string>
+    <string id="HijriMonths">Muharrem,Safer,Rebiul-evvel,Rebiul-ahir,Džumade-l-ula,Džumade-l-uhra,Redžeb,Ša'ban,Ramazan,Ševval,Zul-ka'de,Zul-hidždže</string>
+
+    <!-- On-watch settings menu -->
+    <string id="WarningTime">Vrijeme upozorenja</string>
+    <string id="AlertAtStart">Obavijest kad vakat nastupi</string>
+    <string id="Location">Lokacija</string>
+    <string id="Calculation">Računanje</string>
+    <string id="WarnBeforeEnd">Upozori pred kraj</string>
+    <string id="AllPrayers">Svi namazi</string>
+    <string id="Off">Isključeno</string>
+    <string id="MinBeforeEnd">$1$ min prije kraja</string>
+    <string id="MinShort">$1$ min</string>
+    <string id="DifferentPerPrayer">Različito po namazu</string>
+    <string id="ChooseCity">Odaberi grad</string>
+    <string id="GetGpsFix">Odredi GPS poziciju</string>
+    <string id="GpsHint">Izađite vani, traje ~1 min</string>
+    <string id="Searching">Traženje…</string>
+    <string id="GotFix">Pronađeno: $1$</string>
+    <string id="UseWatchLocation">Koristi lokaciju sata</string>
+    <string id="LastKnown">Zadnja poznata pozicija</string>
+    <string id="CalcMethod">Metoda</string>
+    <string id="Automatic">Automatski</string>
+    <string id="AutoWith">Auto · $1$</string>
+    <string id="AsrSchool">Ikindija</string>
+    <string id="Standard">Standardno</string>
+    <string id="Hanafi">Hanefijski</string>
+    <string id="IshaEndsAt">Jacija ističe u</string>
+    <string id="IslamicMidnight">Šerijatska ponoć</string>
+    <string id="FineTune">Korekcija minuta</string>
+    <string id="InPhoneApp">U aplikaciji Garmin Connect</string>
+    <string id="HighLat">Visoke geo. širine</string>
+    <string id="HlMiddle">Sredina noći</string>
+    <string id="HlSeventh">Sedmina noći</string>
+    <string id="HlAngle">Prema uglu</string>
+    <string id="HijriDate">Hidžretski datum</string>
+    <string id="Days">$1$ dana</string>
+
+    <!-- City regions -->
+    <string id="RegKosovo">Kosovo</string>
+    <string id="RegBalkans">Balkan &amp; Turska</string>
+    <string id="RegEurope">Evropa</string>
+    <string id="RegMiddleEast">Bliski istok</string>
+    <string id="RegAfrica">Afrika</string>
+    <string id="RegAsia">Azija</string>
+    <string id="RegAmericas">Amerike</string>
+    <string id="RegOceania">Okeanija</string>
+
+    <!-- Calculation methods -->
+    <string id="M0">Diyanet (Turska)</string>
+    <string id="M1">Muslimanska svjetska liga</string>
+    <string id="M2">ISNA (Sjeverna Amerika)</string>
+    <string id="M3">Egipatska uprava</string>
+    <string id="M4">Karači</string>
+    <string id="M5">Umm al-Qura (Mekka)</string>
+    <string id="M6">Kosovo (BIK takvim)</string>
+    <string id="M7">Teheran (Geofizika)</string>
+    <string id="M8">Šiije isna-ašerije (Kum)</string>
+    <string id="M9">Zaljevska regija</string>
+    <string id="M10">Kuvajt</string>
+    <string id="M11">Katar</string>
+    <string id="M12">Singapur (MUIS)</string>
+    <string id="M13">Francuska (UOIF)</string>
+    <string id="M14">Rusija</string>
+    <string id="M15">Dubai</string>
+    <string id="M16">Malezija (JAKIM)</string>
+    <string id="M17">Tunis</string>
+    <string id="M18">Alžir</string>
+    <string id="M19">Indonezija (Kemenag)</string>
+    <string id="M20">Maroko</string>
+    <string id="M21">Portugal (Lisabon)</string>
+    <string id="M22">Jordan</string>
+
+    <!-- Phone (Garmin Connect) settings -->
+    <string id="SetUseGps" scope="settings">Koristi lokaciju sata</string>
+    <string id="SetLatitude" scope="settings">Geografska širina (kad se ne koristi lokacija sata)</string>
+    <string id="SetLongitude" scope="settings">Geografska dužina</string>
+    <string id="SetMethod" scope="settings">Metoda računanja</string>
+    <string id="SetTune" scope="settings">Dodatne minute: zora,sabah,izlazak sunca,podne,ikindija,akšam,zalazak sunca,jacija,ponoć</string>
+    <string id="SetAsr" scope="settings">Računanje ikindije</string>
+    <string id="SetHighLat" scope="settings">Pravilo za visoke geo. širine</string>
+    <string id="SetIshaEnd" scope="settings">Jacija ističe u</string>
+    <string id="SetHijri" scope="settings">Korekcija hidžretskog datuma (dani)</string>
+    <string id="SetNotifyStart" scope="settings">Obavijest kad nastupi vakat namaza</string>
+    <string id="SetWarnFajr" scope="settings">Sabah: upozorenje minuta prije kraja (0 = isključeno)</string>
+    <string id="SetWarnDhuhr" scope="settings">Podne: upozorenje minuta prije kraja (0 = isključeno)</string>
+    <string id="SetWarnAsr" scope="settings">Ikindija: upozorenje minuta prije kraja (0 = isključeno)</string>
+    <string id="SetWarnMaghrib" scope="settings">Akšam: upozorenje minuta prije kraja (0 = isključeno)</string>
+    <string id="SetWarnIsha" scope="settings">Jacija: upozorenje minuta prije kraja (0 = isključeno)</string>
+    <string id="OptAuto" scope="settings">Automatski (prema lokaciji)</string>
+    <string id="OptStandard" scope="settings">Standardno (šafijski, malikijski, hanbelijski)</string>
+    <string id="OptHanafi" scope="settings">Hanefijski</string>
+    <string id="OptMiddle" scope="settings">Sredina noći</string>
+    <string id="OptSeventh" scope="settings">Sedmina noći</string>
+    <string id="OptAngle" scope="settings">Prema uglu</string>
+    <string id="OptMidnight" scope="settings">Šerijatska ponoć</string>
+    <string id="OptFajr" scope="settings">Zora</string>
+</strings>

@@ -1,0 +1,143 @@
+<strings>
+    <string id="AppName" scope="glance">Qibla and Salah</string>
+
+    <!-- Prayer and time names (used by the background notifications too) -->
+    <string id="Fajr" scope="background">Subuh</string>
+    <string id="Dhuhr" scope="background">Dzuhur</string>
+    <string id="Asr" scope="background">Ashar</string>
+    <string id="Maghrib" scope="background">Maghrib</string>
+    <string id="Isha" scope="background">Isya</string>
+    <string id="Imsak">Imsak</string>
+    <string id="Sunrise">Terbit</string>
+    <string id="Midnight">Tengah malam</string>
+
+    <!-- Notifications ($1$ = time or minutes) -->
+    <string id="NotifStarted" scope="background">Masuk waktu · hingga $1$</string>
+    <string id="NotifEnds" scope="background">Habis $1$ mnt lagi · sudah salat?</string>
+    <string id="ActPrayed" scope="background">Sudah salat</string>
+    <string id="ActNotYet" scope="background">Belum</string>
+    <string id="WatchLocation" scope="background">Lokasi jam</string>
+    <string id="NotSet" scope="background">Belum diatur</string>
+
+    <!-- Glance -->
+    <string id="GlEnds" scope="glance">habis $1$</string>
+    <string id="GlStarts" scope="glance">mulai $1$</string>
+    <string id="GlIn" scope="glance">$1$ lagi</string>
+    <string id="GlPrayed" scope="glance">sudah salat</string>
+    <string id="GlNoLocation" scope="glance">Atur lokasi</string>
+
+    <!-- Main pages -->
+    <string id="LblTimeLeft">SISA WAKTU</string>
+    <string id="LblPrayed">SUDAH SALAT</string>
+    <string id="LblNext">SALAT BERIKUTNYA</string>
+    <string id="UnitHours">jam lagi</string>
+    <string id="UnitMinutes">mnt lagi</string>
+    <string id="Ends">habis $1$</string>
+    <string id="Starts">mulai $1$</string>
+    <string id="Qibla">KIBLAT</string>
+    <string id="FacingQibla">Menghadap kiblat</string>
+    <string id="NoCompass">Tanpa kompas · U di atas</string>
+    <string id="CompassPoints">U,TL,T,TG,S,BD,B,BL</string>
+    <string id="PrayedToday">salat hari ini</string>
+    <string id="StreakOne">1 hari lima waktu</string>
+    <string id="StreakMany">$1$ hari lima waktu</string>
+    <string id="Today">Hari ini</string>
+    <string id="NeedLocation">Lokasi diperlukan</string>
+    <string id="NeedLocationHint">Tahan tombol bawah lalu pilih Lokasi, atau atur di aplikasi Garmin Connect.</string>
+    <string id="HijriMonths">Muharam,Safar,Rabiulawal,Rabiulakhir,Jumadilawal,Jumadilakhir,Rajab,Syakban,Ramadan,Syawal,Zulkaidah,Zulhijah</string>
+
+    <!-- On-watch settings menu -->
+    <string id="WarningTime">Waktu pengingat</string>
+    <string id="AlertAtStart">Ingatkan saat masuk waktu</string>
+    <string id="Location">Lokasi</string>
+    <string id="Calculation">Perhitungan</string>
+    <string id="WarnBeforeEnd">Ingatkan sebelum habis</string>
+    <string id="AllPrayers">Semua salat</string>
+    <string id="Off">Mati</string>
+    <string id="MinBeforeEnd">$1$ mnt sebelum habis</string>
+    <string id="MinShort">$1$ mnt</string>
+    <string id="DifferentPerPrayer">Beda tiap salat</string>
+    <string id="ChooseCity">Pilih kota</string>
+    <string id="GetGpsFix">Ambil posisi GPS</string>
+    <string id="GpsHint">Keluar ruangan, ~1 mnt</string>
+    <string id="Searching">Mencari…</string>
+    <string id="GotFix">Dapat $1$</string>
+    <string id="UseWatchLocation">Pakai lokasi jam</string>
+    <string id="LastKnown">Posisi terakhir</string>
+    <string id="CalcMethod">Metode</string>
+    <string id="Automatic">Otomatis</string>
+    <string id="AutoWith">Otomatis · $1$</string>
+    <string id="AsrSchool">Ashar</string>
+    <string id="Standard">Standar</string>
+    <string id="Hanafi">Hanafi</string>
+    <string id="IshaEndsAt">Isya berakhir pada</string>
+    <string id="IslamicMidnight">Tengah malam syar'i</string>
+    <string id="FineTune">Koreksi menit</string>
+    <string id="InPhoneApp">Di aplikasi Garmin Connect</string>
+    <string id="HighLat">Lintang tinggi</string>
+    <string id="HlMiddle">Tengah malam</string>
+    <string id="HlSeventh">Sepertujuh malam</string>
+    <string id="HlAngle">Berbasis sudut</string>
+    <string id="HijriDate">Tanggal Hijriah</string>
+    <string id="Days">$1$ hari</string>
+
+    <!-- City regions -->
+    <string id="RegKosovo">Kosovo</string>
+    <string id="RegBalkans">Balkan &amp; Turki</string>
+    <string id="RegEurope">Eropa</string>
+    <string id="RegMiddleEast">Timur Tengah</string>
+    <string id="RegAfrica">Afrika</string>
+    <string id="RegAsia">Asia</string>
+    <string id="RegAmericas">Amerika</string>
+    <string id="RegOceania">Oseania</string>
+
+    <!-- Calculation methods -->
+    <string id="M0">Diyanet (Turki)</string>
+    <string id="M1">Liga Muslim Dunia</string>
+    <string id="M2">ISNA (Amerika Utara)</string>
+    <string id="M3">Otoritas Mesir</string>
+    <string id="M4">Karachi</string>
+    <string id="M5">Umm al-Qura (Makkah)</string>
+    <string id="M6">Kosovo (BIK takvim)</string>
+    <string id="M7">Teheran (Geofisika)</string>
+    <string id="M8">Syiah Itsna Asyariyah (Qom)</string>
+    <string id="M9">Kawasan Teluk</string>
+    <string id="M10">Kuwait</string>
+    <string id="M11">Qatar</string>
+    <string id="M12">Singapura (MUIS)</string>
+    <string id="M13">Prancis (UOIF)</string>
+    <string id="M14">Rusia</string>
+    <string id="M15">Dubai</string>
+    <string id="M16">Malaysia (JAKIM)</string>
+    <string id="M17">Tunisia</string>
+    <string id="M18">Aljazair</string>
+    <string id="M19">Indonesia (Kemenag)</string>
+    <string id="M20">Maroko</string>
+    <string id="M21">Portugal (Lisbon)</string>
+    <string id="M22">Yordania</string>
+
+    <!-- Phone (Garmin Connect) settings -->
+    <string id="SetUseGps" scope="settings">Gunakan lokasi jam</string>
+    <string id="SetLatitude" scope="settings">Lintang (jika tidak memakai lokasi jam)</string>
+    <string id="SetLongitude" scope="settings">Bujur</string>
+    <string id="SetMethod" scope="settings">Metode perhitungan</string>
+    <string id="SetTune" scope="settings">Menit tambahan: imsak,subuh,terbit,dzuhur,ashar,maghrib,terbenam,isya,tengah malam</string>
+    <string id="SetAsr" scope="settings">Perhitungan Ashar</string>
+    <string id="SetHighLat" scope="settings">Aturan lintang tinggi</string>
+    <string id="SetIshaEnd" scope="settings">Isya berakhir pada</string>
+    <string id="SetHijri" scope="settings">Penyesuaian tanggal Hijriah (hari)</string>
+    <string id="SetNotifyStart" scope="settings">Beri tahu saat masuk waktu salat</string>
+    <string id="SetWarnFajr" scope="settings">Subuh: ingatkan menit sebelum habis (0 = mati)</string>
+    <string id="SetWarnDhuhr" scope="settings">Dzuhur: ingatkan menit sebelum habis (0 = mati)</string>
+    <string id="SetWarnAsr" scope="settings">Ashar: ingatkan menit sebelum habis (0 = mati)</string>
+    <string id="SetWarnMaghrib" scope="settings">Maghrib: ingatkan menit sebelum habis (0 = mati)</string>
+    <string id="SetWarnIsha" scope="settings">Isya: ingatkan menit sebelum habis (0 = mati)</string>
+    <string id="OptAuto" scope="settings">Otomatis (berdasarkan lokasi)</string>
+    <string id="OptStandard" scope="settings">Standar (Syafi'i, Maliki, Hanbali)</string>
+    <string id="OptHanafi" scope="settings">Hanafi</string>
+    <string id="OptMiddle" scope="settings">Tengah malam</string>
+    <string id="OptSeventh" scope="settings">Sepertujuh malam</string>
+    <string id="OptAngle" scope="settings">Berbasis sudut</string>
+    <string id="OptMidnight" scope="settings">Tengah malam syar'i</string>
+    <string id="OptFajr" scope="settings">Subuh</string>
+</strings>

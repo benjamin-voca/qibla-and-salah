@@ -1,0 +1,143 @@
+<strings>
+    <string id="AppName" scope="glance">Qibla and Salah</string>
+
+    <!-- Prayer and time names (used by the background notifications too) -->
+    <string id="Fajr" scope="background">الفجر</string>
+    <string id="Dhuhr" scope="background">الظهر</string>
+    <string id="Asr" scope="background">العصر</string>
+    <string id="Maghrib" scope="background">المغرب</string>
+    <string id="Isha" scope="background">العشاء</string>
+    <string id="Imsak">الإمساك</string>
+    <string id="Sunrise">الشروق</string>
+    <string id="Midnight">منتصف الليل</string>
+
+    <!-- Notifications ($1$ = time or minutes) -->
+    <string id="NotifStarted" scope="background">دخل الوقت · حتى $1$</string>
+    <string id="NotifEnds" scope="background">ينتهي بعد $1$ د · هل صليت؟</string>
+    <string id="ActPrayed" scope="background">صلّيت</string>
+    <string id="ActNotYet" scope="background">ليس بعد</string>
+    <string id="WatchLocation" scope="background">موقع الساعة</string>
+    <string id="NotSet" scope="background">غير محدد</string>
+
+    <!-- Glance -->
+    <string id="GlEnds" scope="glance">ينتهي $1$</string>
+    <string id="GlStarts" scope="glance">يبدأ $1$</string>
+    <string id="GlIn" scope="glance">بعد $1$</string>
+    <string id="GlPrayed" scope="glance">صُلّيت</string>
+    <string id="GlNoLocation" scope="glance">حدد الموقع</string>
+
+    <!-- Main pages -->
+    <string id="LblTimeLeft">الوقت المتبقي</string>
+    <string id="LblPrayed">صُلّيت</string>
+    <string id="LblNext">الصلاة التالية</string>
+    <string id="UnitHours">س متبقية</string>
+    <string id="UnitMinutes">د متبقية</string>
+    <string id="Ends">ينتهي $1$</string>
+    <string id="Starts">يبدأ $1$</string>
+    <string id="Qibla">القبلة</string>
+    <string id="FacingQibla">باتجاه القبلة</string>
+    <string id="NoCompass">لا بوصلة · الشمال للأعلى</string>
+    <string id="CompassPoints">ش,شق,ق,جق,ج,جغ,غ,شغ</string>
+    <string id="PrayedToday">صُلّيت اليوم</string>
+    <string id="StreakOne">يوم واحد بالخمس</string>
+    <string id="StreakMany">$1$ أيام بالخمس</string>
+    <string id="Today">اليوم</string>
+    <string id="NeedLocation">الموقع مطلوب</string>
+    <string id="NeedLocationHint">اضغط مطولاً على الزر السفلي واختر الموقع، أو حدده في تطبيق Garmin Connect.</string>
+    <string id="HijriMonths">محرم,صفر,ربيع الأول,ربيع الآخر,جمادى الأولى,جمادى الآخرة,رجب,شعبان,رمضان,شوال,ذو القعدة,ذو الحجة</string>
+
+    <!-- On-watch settings menu -->
+    <string id="WarningTime">وقت التنبيه</string>
+    <string id="AlertAtStart">تنبيه عند دخول الوقت</string>
+    <string id="Location">الموقع</string>
+    <string id="Calculation">الحساب</string>
+    <string id="WarnBeforeEnd">تنبيه قبل الانتهاء</string>
+    <string id="AllPrayers">كل الصلوات</string>
+    <string id="Off">إيقاف</string>
+    <string id="MinBeforeEnd">$1$ د قبل الانتهاء</string>
+    <string id="MinShort">$1$ د</string>
+    <string id="DifferentPerPrayer">مختلف لكل صلاة</string>
+    <string id="ChooseCity">اختر المدينة</string>
+    <string id="GetGpsFix">تحديد الموقع بـ GPS</string>
+    <string id="GpsHint">اخرج إلى الخارج، ~1 د</string>
+    <string id="Searching">جارٍ البحث…</string>
+    <string id="GotFix">تم: $1$</string>
+    <string id="UseWatchLocation">استخدم موقع الساعة</string>
+    <string id="LastKnown">آخر موقع معروف</string>
+    <string id="CalcMethod">الطريقة</string>
+    <string id="Automatic">تلقائي</string>
+    <string id="AutoWith">تلقائي · $1$</string>
+    <string id="AsrSchool">العصر</string>
+    <string id="Standard">الجمهور</string>
+    <string id="Hanafi">الحنفي</string>
+    <string id="IshaEndsAt">نهاية العشاء</string>
+    <string id="IslamicMidnight">منتصف الليل الشرعي</string>
+    <string id="FineTune">ضبط الدقائق</string>
+    <string id="InPhoneApp">في تطبيق Garmin Connect</string>
+    <string id="HighLat">خطوط العرض العليا</string>
+    <string id="HlMiddle">منتصف الليل</string>
+    <string id="HlSeventh">سُبع الليل</string>
+    <string id="HlAngle">حسب الزاوية</string>
+    <string id="HijriDate">التاريخ الهجري</string>
+    <string id="Days">$1$ أيام</string>
+
+    <!-- City regions -->
+    <string id="RegKosovo">كوسوفو</string>
+    <string id="RegBalkans">البلقان وتركيا</string>
+    <string id="RegEurope">أوروبا</string>
+    <string id="RegMiddleEast">الشرق الأوسط</string>
+    <string id="RegAfrica">أفريقيا</string>
+    <string id="RegAsia">آسيا</string>
+    <string id="RegAmericas">الأمريكتان</string>
+    <string id="RegOceania">أوقيانوسيا</string>
+
+    <!-- Calculation methods -->
+    <string id="M0">ديانت (تركيا)</string>
+    <string id="M1">رابطة العالم الإسلامي</string>
+    <string id="M2">ISNA (أمريكا الشمالية)</string>
+    <string id="M3">الهيئة المصرية للمساحة</string>
+    <string id="M4">كراتشي</string>
+    <string id="M5">أم القرى (مكة)</string>
+    <string id="M6">كوسوفو (BIK takvim)</string>
+    <string id="M7">طهران (الجيوفيزياء)</string>
+    <string id="M8">الشيعة الاثنا عشرية (قم)</string>
+    <string id="M9">منطقة الخليج</string>
+    <string id="M10">الكويت</string>
+    <string id="M11">قطر</string>
+    <string id="M12">سنغافورة (MUIS)</string>
+    <string id="M13">فرنسا (UOIF)</string>
+    <string id="M14">روسيا</string>
+    <string id="M15">دبي</string>
+    <string id="M16">ماليزيا (JAKIM)</string>
+    <string id="M17">تونس</string>
+    <string id="M18">الجزائر</string>
+    <string id="M19">إندونيسيا (Kemenag)</string>
+    <string id="M20">المغرب</string>
+    <string id="M21">البرتغال (لشبونة)</string>
+    <string id="M22">الأردن</string>
+
+    <!-- Phone (Garmin Connect) settings -->
+    <string id="SetUseGps" scope="settings">استخدم موقع الساعة</string>
+    <string id="SetLatitude" scope="settings">خط العرض (عند عدم استخدام موقع الساعة)</string>
+    <string id="SetLongitude" scope="settings">خط الطول</string>
+    <string id="SetMethod" scope="settings">طريقة الحساب</string>
+    <string id="SetTune" scope="settings">دقائق إضافية: الإمساك,الفجر,الشروق,الظهر,العصر,المغرب,الغروب,العشاء,منتصف الليل</string>
+    <string id="SetAsr" scope="settings">حساب العصر</string>
+    <string id="SetHighLat" scope="settings">قاعدة خطوط العرض العليا</string>
+    <string id="SetIshaEnd" scope="settings">نهاية العشاء</string>
+    <string id="SetHijri" scope="settings">تعديل التاريخ الهجري (أيام)</string>
+    <string id="SetNotifyStart" scope="settings">التنبيه عند دخول وقت الصلاة</string>
+    <string id="SetWarnFajr" scope="settings">الفجر: التنبيه قبل نهاية الوقت بدقائق (0 = إيقاف)</string>
+    <string id="SetWarnDhuhr" scope="settings">الظهر: التنبيه قبل نهاية الوقت بدقائق (0 = إيقاف)</string>
+    <string id="SetWarnAsr" scope="settings">العصر: التنبيه قبل نهاية الوقت بدقائق (0 = إيقاف)</string>
+    <string id="SetWarnMaghrib" scope="settings">المغرب: التنبيه قبل نهاية الوقت بدقائق (0 = إيقاف)</string>
+    <string id="SetWarnIsha" scope="settings">العشاء: التنبيه قبل نهاية الوقت بدقائق (0 = إيقاف)</string>
+    <string id="OptAuto" scope="settings">تلقائي (حسب الموقع)</string>
+    <string id="OptStandard" scope="settings">الجمهور (الشافعي، المالكي، الحنبلي)</string>
+    <string id="OptHanafi" scope="settings">الحنفي</string>
+    <string id="OptMiddle" scope="settings">منتصف الليل</string>
+    <string id="OptSeventh" scope="settings">سُبع الليل</string>
+    <string id="OptAngle" scope="settings">حسب الزاوية</string>
+    <string id="OptMidnight" scope="settings">منتصف الليل الشرعي</string>
+    <string id="OptFajr" scope="settings">الفجر</string>
+</strings>

@@ -1,0 +1,143 @@
+<strings>
+    <string id="AppName" scope="glance">Qibla and Salah</string>
+
+    <!-- Prayer and time names (used by the background notifications too) -->
+    <string id="Fajr" scope="background">Sabah</string>
+    <string id="Dhuhr" scope="background">Öğle</string>
+    <string id="Asr" scope="background">İkindi</string>
+    <string id="Maghrib" scope="background">Akşam</string>
+    <string id="Isha" scope="background">Yatsı</string>
+    <string id="Imsak">İmsak</string>
+    <string id="Sunrise">Güneş</string>
+    <string id="Midnight">Gece yarısı</string>
+
+    <!-- Notifications ($1$ = time or minutes) -->
+    <string id="NotifStarted" scope="background">Vakit girdi · bitiş $1$</string>
+    <string id="NotifEnds" scope="background">$1$ dk kaldı · kıldın mı?</string>
+    <string id="ActPrayed" scope="background">Kıldım</string>
+    <string id="ActNotYet" scope="background">Henüz değil</string>
+    <string id="WatchLocation" scope="background">Saat konumu</string>
+    <string id="NotSet" scope="background">Ayarlanmadı</string>
+
+    <!-- Glance -->
+    <string id="GlEnds" scope="glance">bitiş $1$</string>
+    <string id="GlStarts" scope="glance">giriş $1$</string>
+    <string id="GlIn" scope="glance">$1$ sonra</string>
+    <string id="GlPrayed" scope="glance">kılındı</string>
+    <string id="GlNoLocation" scope="glance">Konum ayarla</string>
+
+    <!-- Main pages -->
+    <string id="LblTimeLeft">KALAN SÜRE</string>
+    <string id="LblPrayed">KILINDI</string>
+    <string id="LblNext">SONRAKİ NAMAZ</string>
+    <string id="UnitHours">sa kaldı</string>
+    <string id="UnitMinutes">dk kaldı</string>
+    <string id="Ends">bitiş $1$</string>
+    <string id="Starts">giriş $1$</string>
+    <string id="Qibla">KIBLE</string>
+    <string id="FacingQibla">Kıbleye dönük</string>
+    <string id="NoCompass">Pusula yok · K yukarıda</string>
+    <string id="CompassPoints">K,KD,D,GD,G,GB,B,KB</string>
+    <string id="PrayedToday">bugün kılınan</string>
+    <string id="StreakOne">1 gün beş vakit</string>
+    <string id="StreakMany">$1$ gün beş vakit</string>
+    <string id="Today">Bugün</string>
+    <string id="NeedLocation">Konum gerekli</string>
+    <string id="NeedLocationHint">Alt tuşu basılı tutup Konum'u seçin veya Garmin Connect uygulamasında ayarlayın.</string>
+    <string id="HijriMonths">Muharrem,Safer,Rebiülevvel,Rebiülahir,Cemaziyelevvel,Cemaziyelahir,Recep,Şaban,Ramazan,Şevval,Zilkade,Zilhicce</string>
+
+    <!-- On-watch settings menu -->
+    <string id="WarningTime">Uyarı zamanı</string>
+    <string id="AlertAtStart">Vakit girince uyar</string>
+    <string id="Location">Konum</string>
+    <string id="Calculation">Hesaplama</string>
+    <string id="WarnBeforeEnd">Bitmeden uyar</string>
+    <string id="AllPrayers">Tüm namazlar</string>
+    <string id="Off">Kapalı</string>
+    <string id="MinBeforeEnd">Bitimden $1$ dk önce</string>
+    <string id="MinShort">$1$ dk</string>
+    <string id="DifferentPerPrayer">Namaza göre farklı</string>
+    <string id="ChooseCity">Şehir seç</string>
+    <string id="GetGpsFix">GPS konumu al</string>
+    <string id="GpsHint">Dışarı çıkın, ~1 dk sürer</string>
+    <string id="Searching">Aranıyor…</string>
+    <string id="GotFix">Alındı: $1$</string>
+    <string id="UseWatchLocation">Saat konumunu kullan</string>
+    <string id="LastKnown">Son bilinen konum</string>
+    <string id="CalcMethod">Yöntem</string>
+    <string id="Automatic">Otomatik</string>
+    <string id="AutoWith">Oto · $1$</string>
+    <string id="AsrSchool">İkindi</string>
+    <string id="Standard">Standart</string>
+    <string id="Hanafi">Hanefi</string>
+    <string id="IshaEndsAt">Yatsı bitişi</string>
+    <string id="IslamicMidnight">Şer'i gece yarısı</string>
+    <string id="FineTune">Dakika ayarı</string>
+    <string id="InPhoneApp">Garmin Connect uygulamasında</string>
+    <string id="HighLat">Yüksek enlemler</string>
+    <string id="HlMiddle">Gecenin ortası</string>
+    <string id="HlSeventh">Gecenin yedide biri</string>
+    <string id="HlAngle">Açıya dayalı</string>
+    <string id="HijriDate">Hicri tarih</string>
+    <string id="Days">$1$ gün</string>
+
+    <!-- City regions -->
+    <string id="RegKosovo">Kosova</string>
+    <string id="RegBalkans">Balkanlar &amp; Türkiye</string>
+    <string id="RegEurope">Avrupa</string>
+    <string id="RegMiddleEast">Orta Doğu</string>
+    <string id="RegAfrica">Afrika</string>
+    <string id="RegAsia">Asya</string>
+    <string id="RegAmericas">Amerika</string>
+    <string id="RegOceania">Okyanusya</string>
+
+    <!-- Calculation methods -->
+    <string id="M0">Diyanet (Türkiye)</string>
+    <string id="M1">Dünya Müslüman Birliği</string>
+    <string id="M2">ISNA (Kuzey Amerika)</string>
+    <string id="M3">Mısır Otoritesi</string>
+    <string id="M4">Karaçi</string>
+    <string id="M5">Ümmü'l-Kura (Mekke)</string>
+    <string id="M6">Kosova (BIK takvim)</string>
+    <string id="M7">Tahran (Jeofizik)</string>
+    <string id="M8">Şii İsna Aşeriyye (Kum)</string>
+    <string id="M9">Körfez bölgesi</string>
+    <string id="M10">Kuveyt</string>
+    <string id="M11">Katar</string>
+    <string id="M12">Singapur (MUIS)</string>
+    <string id="M13">Fransa (UOIF)</string>
+    <string id="M14">Rusya</string>
+    <string id="M15">Dubai</string>
+    <string id="M16">Malezya (JAKIM)</string>
+    <string id="M17">Tunus</string>
+    <string id="M18">Cezayir</string>
+    <string id="M19">Endonezya (Kemenag)</string>
+    <string id="M20">Fas</string>
+    <string id="M21">Portekiz (Lizbon)</string>
+    <string id="M22">Ürdün</string>
+
+    <!-- Phone (Garmin Connect) settings -->
+    <string id="SetUseGps" scope="settings">Saat konumunu kullan</string>
+    <string id="SetLatitude" scope="settings">Enlem (saat konumu kullanılmıyorsa)</string>
+    <string id="SetLongitude" scope="settings">Boylam</string>
+    <string id="SetMethod" scope="settings">Hesaplama yöntemi</string>
+    <string id="SetTune" scope="settings">Ek dakikalar: imsak,sabah,güneş,öğle,ikindi,akşam,gün batımı,yatsı,gece yarısı</string>
+    <string id="SetAsr" scope="settings">İkindi hesabı</string>
+    <string id="SetHighLat" scope="settings">Yüksek enlem kuralı</string>
+    <string id="SetIshaEnd" scope="settings">Yatsı bitişi</string>
+    <string id="SetHijri" scope="settings">Hicri tarih düzeltmesi (gün)</string>
+    <string id="SetNotifyStart" scope="settings">Namaz vakti girince bildir</string>
+    <string id="SetWarnFajr" scope="settings">Sabah: bitmeden kaç dk önce uyarılsın (0 = kapalı)</string>
+    <string id="SetWarnDhuhr" scope="settings">Öğle: bitmeden kaç dk önce uyarılsın (0 = kapalı)</string>
+    <string id="SetWarnAsr" scope="settings">İkindi: bitmeden kaç dk önce uyarılsın (0 = kapalı)</string>
+    <string id="SetWarnMaghrib" scope="settings">Akşam: bitmeden kaç dk önce uyarılsın (0 = kapalı)</string>
+    <string id="SetWarnIsha" scope="settings">Yatsı: bitmeden kaç dk önce uyarılsın (0 = kapalı)</string>
+    <string id="OptAuto" scope="settings">Otomatik (konuma göre)</string>
+    <string id="OptStandard" scope="settings">Standart (Şafiî, Mâlikî, Hanbelî)</string>
+    <string id="OptHanafi" scope="settings">Hanefi</string>
+    <string id="OptMiddle" scope="settings">Gecenin ortası</string>
+    <string id="OptSeventh" scope="settings">Gecenin yedide biri</string>
+    <string id="OptAngle" scope="settings">Açıya dayalı</string>
+    <string id="OptMidnight" scope="settings">Şer'i gece yarısı</string>
+    <string id="OptFajr" scope="settings">Sabah</string>
+</strings>

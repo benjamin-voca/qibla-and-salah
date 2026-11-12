@@ -1,0 +1,157 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CIQ_SDK_VERSION: "9.3.0"
+  SDK_MANAGER_VERSION: "0.8.4"
+
+jobs:
+  # Pure-Python reference implementation + property tests. Needs nothing from Garmin,
+  # so it runs everywhere (including pull requests from forks).
+  reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m unittest discover -s tests -v
+
+  # Build for every watch and run the Monkey C unit/property tests in the real
+  # Connect IQ simulator (headless, Xvfb).
+  #
+  # Garmin only serves the SDK and device files to signed-in developers, so this job
+  # needs repository secrets:
+  #   GARMIN_USERNAME, GARMIN_PASSWORD  - a Garmin Connect IQ developer account
+  #                                       (an account without 2-step verification)
+  #   DEVELOPER_KEY_B64 (optional)      - base64 of the DER signing key; if missing,
+  #                                       a throwaway key is generated (fine for tests,
+  #                                       but store uploads must use your real key)
+  # Without the secrets (e.g. pull requests from forks) the job is skipped.
+  watch:
+    runs-on: ubuntu-22.04   # the simulator needs libwebkit2gtk-4.0, which 24.04 dropped
+    env:
+      GARMIN_USERNAME: ${{ secrets.GARMIN_USERNAME }}
+      GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+      DEVELOPER_KEY_B64: ${{ secrets.DEVELOPER_KEY_B64 }}
+    steps:
+      - name: Check for Garmin credentials
+        id: creds
+        run: |
+          if [ -n "$GARMIN_USERNAME" ] && [ -n "$GARMIN_PASSWORD" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::GARMIN_USERNAME/GARMIN_PASSWORD secrets not set - skipping watch build and simulator tests."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.creds.outputs.ok == 'true'
+
+      - uses: actions/setup-java@v4
+        if: steps.creds.outputs.ok == 'true'
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install simulator dependencies
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            xvfb libwebkit2gtk-4.0-37 libusb-1.0-0 libsecret-1-0 libjpeg8 libsm6 libxxf86vm1 \
+            libgtk-3-0 libnotify4 fonts-dejavu-core
+
+      - name: Cache Connect IQ SDK and device files
+        if: steps.creds.outputs.ok == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.Garmin/ConnectIQ
+          key: ciq-${{ env.CIQ_SDK_VERSION }}-${{ hashFiles('manifest.xml') }}
+          restore-keys: ciq-${{ env.CIQ_SDK_VERSION }}-
+
+      - name: Install the Connect IQ SDK manager CLI
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          mkdir -p "$HOME/.local/bin"
+          curl -fsSL "https://github.com/lindell/connect-iq-sdk-manager-cli/releases/download/v${SDK_MANAGER_VERSION}/connect-iq-sdk-manager-cli_${SDK_MANAGER_VERSION}_Linux_x86_64.tar.gz" \
+            | tar xz -C "$HOME/.local/bin" connect-iq-sdk-manager
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Download SDK and device files
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          # The account owner has accepted the Connect IQ SDK license; accept the current
+          # version of it for this CI machine as well.
+          HASH=$(connect-iq-sdk-manager agreement view | sed -n 's/^Current Hash: //p')
+          connect-iq-sdk-manager agreement accept --agreement-hash="$HASH"
+          connect-iq-sdk-manager login
+          connect-iq-sdk-manager sdk set "$CIQ_SDK_VERSION"
+          connect-iq-sdk-manager device download --manifest manifest.xml --include-fonts
+          echo "$(connect-iq-sdk-manager sdk current-path)/bin" >> "$GITHUB_PATH"
+
+      - name: Signing key
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          if [ -n "$DEVELOPER_KEY_B64" ]; then
+            echo "$DEVELOPER_KEY_B64" | base64 -d > "$RUNNER_TEMP/key.der"
+          else
+            openssl genrsa -out "$RUNNER_TEMP/key.pem" 4096
+            openssl pkcs8 -topk8 -inform PEM -outform DER -in "$RUNNER_TEMP/key.pem" -out "$RUNNER_TEMP/key.der" -nocrypt
+          fi
+
+      - name: Check monkey.jungle is up to date
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          python3 tools/gen_jungle.py
+          git diff --exit-code monkey.jungle
+
+      - name: Build unit tests
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          mkdir -p bin
+          for d in vivoactive5 fr245; do
+            monkeyc -f monkey.jungle -d "$d" -y "$RUNNER_TEMP/key.der" -o "bin/test-$d.prg" --unit-test
+          done
+
+      - name: Run unit and property tests in the simulator
+        if: steps.creds.outputs.ok == 'true'
+        run: |
+          Xvfb :99 -screen 0 1280x1024x24 -nolisten tcp &
+          export DISPLAY=:99
+          simulator > simulator.log 2>&1 &
+          for _ in $(seq 120); do ss -ltn | grep -q ':1234 ' && break; sleep 1; done
+          status=0
+          for d in vivoactive5 fr245; do
+            echo "::group::tests on $d"
+            monkeydo "bin/test-$d.prg" "$d" -t | tee "test-$d.log"
+            echo "::endgroup::"
+            grep -q '^PASSED' "test-$d.log" || { echo "::error::tests failed on $d"; status=1; }
+          done
+          exit $status
+
+      - name: Build the store package for all watches
+        if: steps.creds.outputs.ok == 'true'
+        run: monkeyc -e -r -f monkey.jungle -y "$RUNNER_TEMP/key.der" -o bin/QiblaSalah.iq
+
+      - uses: actions/upload-artifact@v4
+        if: steps.creds.outputs.ok == 'true'
+        with:
+          name: QiblaSalah-iq
+          path: bin/QiblaSalah.iq
+
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.creds.outputs.ok == 'true'
+        with:
+          name: simulator-logs
+          path: |
+            simulator.log
+            test-*.log
+          if-no-files-found: ignore

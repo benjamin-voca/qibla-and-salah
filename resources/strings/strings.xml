@@ -1,0 +1,143 @@
+<strings>
+    <string id="AppName" scope="glance">Qibla and Salah</string>
+
+    <!-- Prayer and time names (used by the background notifications too) -->
+    <string id="Fajr" scope="background">Fajr</string>
+    <string id="Dhuhr" scope="background">Dhuhr</string>
+    <string id="Asr" scope="background">Asr</string>
+    <string id="Maghrib" scope="background">Maghrib</string>
+    <string id="Isha" scope="background">Isha</string>
+    <string id="Imsak">Imsak</string>
+    <string id="Sunrise">Sunrise</string>
+    <string id="Midnight">Midnight</string>
+
+    <!-- Notifications ($1$ = time or minutes) -->
+    <string id="NotifStarted" scope="background">Time started · until $1$</string>
+    <string id="NotifEnds" scope="background">Ends in $1$ min · prayed?</string>
+    <string id="ActPrayed" scope="background">Prayed</string>
+    <string id="ActNotYet" scope="background">Not yet</string>
+    <string id="WatchLocation" scope="background">Watch location</string>
+    <string id="NotSet" scope="background">Not set</string>
+
+    <!-- Glance -->
+    <string id="GlEnds" scope="glance">ends $1$</string>
+    <string id="GlStarts" scope="glance">starts $1$</string>
+    <string id="GlIn" scope="glance">in $1$</string>
+    <string id="GlPrayed" scope="glance">prayed</string>
+    <string id="GlNoLocation" scope="glance">Set location</string>
+
+    <!-- Main pages -->
+    <string id="LblTimeLeft">TIME LEFT FOR</string>
+    <string id="LblPrayed">PRAYED</string>
+    <string id="LblNext">NEXT PRAYER</string>
+    <string id="UnitHours">h left</string>
+    <string id="UnitMinutes">min left</string>
+    <string id="Ends">ends $1$</string>
+    <string id="Starts">starts $1$</string>
+    <string id="Qibla">QIBLA</string>
+    <string id="FacingQibla">Facing Qibla</string>
+    <string id="NoCompass">No compass · N is up</string>
+    <string id="CompassPoints">N,NE,E,SE,S,SW,W,NW</string>
+    <string id="PrayedToday">prayed today</string>
+    <string id="StreakOne">1 day all five</string>
+    <string id="StreakMany">$1$ days all five</string>
+    <string id="Today">Today</string>
+    <string id="NeedLocation">Location needed</string>
+    <string id="NeedLocationHint">Hold the lower button and choose Location, or set it in the Garmin Connect app.</string>
+    <string id="HijriMonths">Muharram,Safar,Rabi' I,Rabi' II,Jumada I,Jumada II,Rajab,Sha'ban,Ramadan,Shawwal,Dhu al-Qi'dah,Dhu al-Hijjah</string>
+
+    <!-- On-watch settings menu -->
+    <string id="WarningTime">Warning time</string>
+    <string id="AlertAtStart">Alert when time starts</string>
+    <string id="Location">Location</string>
+    <string id="Calculation">Calculation</string>
+    <string id="WarnBeforeEnd">Warn before end</string>
+    <string id="AllPrayers">All prayers</string>
+    <string id="Off">Off</string>
+    <string id="MinBeforeEnd">$1$ min before end</string>
+    <string id="MinShort">$1$ min</string>
+    <string id="DifferentPerPrayer">Different per prayer</string>
+    <string id="ChooseCity">Choose city</string>
+    <string id="GetGpsFix">Get GPS fix now</string>
+    <string id="GpsHint">Go outside, takes ~1 min</string>
+    <string id="Searching">Searching…</string>
+    <string id="GotFix">Got $1$</string>
+    <string id="UseWatchLocation">Use watch location</string>
+    <string id="LastKnown">Last known position</string>
+    <string id="CalcMethod">Method</string>
+    <string id="Automatic">Automatic</string>
+    <string id="AutoWith">Auto · $1$</string>
+    <string id="AsrSchool">Asr</string>
+    <string id="Standard">Standard</string>
+    <string id="Hanafi">Hanafi</string>
+    <string id="IshaEndsAt">Isha ends at</string>
+    <string id="IslamicMidnight">Islamic midnight</string>
+    <string id="FineTune">Fine-tune minutes</string>
+    <string id="InPhoneApp">In the Garmin Connect app</string>
+    <string id="HighLat">High latitudes</string>
+    <string id="HlMiddle">Middle of the night</string>
+    <string id="HlSeventh">One-seventh of night</string>
+    <string id="HlAngle">Angle-based</string>
+    <string id="HijriDate">Hijri date</string>
+    <string id="Days">$1$ days</string>
+
+    <!-- City regions -->
+    <string id="RegKosovo">Kosovo</string>
+    <string id="RegBalkans">Balkans &amp; Turkey</string>
+    <string id="RegEurope">Europe</string>
+    <string id="RegMiddleEast">Middle East</string>
+    <string id="RegAfrica">Africa</string>
+    <string id="RegAsia">Asia</string>
+    <string id="RegAmericas">Americas</string>
+    <string id="RegOceania">Oceania</string>
+
+    <!-- Calculation methods -->
+    <string id="M0">Diyanet (Turkey)</string>
+    <string id="M1">Muslim World League</string>
+    <string id="M2">ISNA (North America)</string>
+    <string id="M3">Egyptian Authority</string>
+    <string id="M4">Karachi</string>
+    <string id="M5">Umm al-Qura (Makkah)</string>
+    <string id="M6">Kosovo (BIK takvim)</string>
+    <string id="M7">Tehran (Geophysics)</string>
+    <string id="M8">Shia Ithna-Ashari (Qum)</string>
+    <string id="M9">Gulf region</string>
+    <string id="M10">Kuwait</string>
+    <string id="M11">Qatar</string>
+    <string id="M12">Singapore (MUIS)</string>
+    <string id="M13">France (UOIF)</string>
+    <string id="M14">Russia</string>
+    <string id="M15">Dubai</string>
+    <string id="M16">Malaysia (JAKIM)</string>
+    <string id="M17">Tunisia</string>
+    <string id="M18">Algeria</string>
+    <string id="M19">Indonesia (Kemenag)</string>
+    <string id="M20">Morocco</string>
+    <string id="M21">Portugal (Lisbon)</string>
+    <string id="M22">Jordan</string>
+
+    <!-- Phone (Garmin Connect) settings -->
+    <string id="SetUseGps" scope="settings">Use watch location</string>
+    <string id="SetLatitude" scope="settings">Latitude (when not using watch location)</string>
+    <string id="SetLongitude" scope="settings">Longitude</string>
+    <string id="SetMethod" scope="settings">Calculation method</string>
+    <string id="SetTune" scope="settings">Extra minutes: imsak,fajr,sunrise,dhuhr,asr,maghrib,sunset,isha,midnight</string>
+    <string id="SetAsr" scope="settings">Asr calculation</string>
+    <string id="SetHighLat" scope="settings">High-latitude rule</string>
+    <string id="SetIshaEnd" scope="settings">Isha ends at</string>
+    <string id="SetHijri" scope="settings">Hijri date adjustment (days)</string>
+    <string id="SetNotifyStart" scope="settings">Notify when a prayer time starts</string>
+    <string id="SetWarnFajr" scope="settings">Fajr: warn minutes before end (0 = off)</string>
+    <string id="SetWarnDhuhr" scope="settings">Dhuhr: warn minutes before end (0 = off)</string>
+    <string id="SetWarnAsr" scope="settings">Asr: warn minutes before end (0 = off)</string>
+    <string id="SetWarnMaghrib" scope="settings">Maghrib: warn minutes before end (0 = off)</string>
+    <string id="SetWarnIsha" scope="settings">Isha: warn minutes before end (0 = off)</string>
+    <string id="OptAuto" scope="settings">Automatic (by location)</string>
+    <string id="OptStandard" scope="settings">Standard (Shafi'i, Maliki, Hanbali)</string>
+    <string id="OptHanafi" scope="settings">Hanafi</string>
+    <string id="OptMiddle" scope="settings">Middle of the night</string>
+    <string id="OptSeventh" scope="settings">One-seventh of the night</string>
+    <string id="OptAngle" scope="settings">Angle-based</string>
+    <string id="OptMidnight" scope="settings">Islamic midnight</string>
+    <string id="OptFajr" scope="settings">Fajr</string>
+</strings>
