@@ -217,9 +217,10 @@ module Hijri {
     // Today's date as "2 Jumada II 1448", or null outside the table.
     function today() as String? {
         var local = Time.now().value() + System.getClockTime().timeZoneOffset;
+        // Umm al-Qura, plus the user's adjustment. (The Kosovo takvim matched Umm
+        // al-Qura on 29 of 32 archived days; it differs only around months the
+        // Islamic Community announces itself, so there is no fixed shift to apply.)
         var adjust = Prayers.prop("hijriAdjust", 0) as Number;
-        // The Kosovo takvim's Hijri date runs one day ahead of Umm al-Qura.
-        if (Prayers.method() == PrayerCalc.KOSOVO) { adjust += 1; }
         var h = fromDay(local / 86400 + adjust);
         if (h == null) { return null; }
         var months = split(WatchUi.loadResource(Rez.Strings.HijriMonths) as String);

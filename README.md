@@ -71,7 +71,9 @@ seasonal adjustments no standard method reproduces. The app models each time as 
 astronomical time (Fajr 18.5°, Isha 15.25°) plus a smooth yearly correction fitted to
 32 days of the takvim (2023–2026): 81 of 192 values exact, 93 within 1 min, the rest
 within 2–3 min — the takvim itself varies by about a minute between years. Its Hijri
-date runs a day ahead of Umm al-Qura, so the method adds +1 day.
+date follows Umm al-Qura (29 of the 32 archived days match; the rest are month starts
+the Islamic Community announces itself, e.g. Ramadan 1447 began a day later), so no
+fixed shift is applied; use the ±2 day Hijri adjustment around those dates.
 Re-fit: `tools/fetch_takvim.py` then `tools/fit_takvim.py`.
 
 **High latitudes.** Fajr/Isha use the angle-based rule by default (middle-of-night and
@@ -144,6 +146,14 @@ Sideload: copy `bin/Namaz.prg` to `GARMIN/APPS/` over USB (`tools/install-watch.
 The simulator needs webkitgtk-4.0, which current nixpkgs dropped; an FHS environment
 from nixos-24.05 works, see `tools/nixos-sim.nix`. Run it on a hidden Xvfb display so it
 never takes focus.
+
+## CI
+
+`.github/workflows/ci.yml` runs the Python reference tests on every push and pull
+request. The watch job (SDK + device download, simulator tests, store package) needs a
+Garmin login; its secrets live only in the `garmin` environment, which only `main` can
+use, and the job never runs for pull requests. Actions are pinned to commits and the
+downloaded SDK manager is checksum-verified; the cache never contains the login token.
 
 ## Privacy
 
