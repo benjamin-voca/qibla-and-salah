@@ -13,6 +13,8 @@ runs out** — "Asr ends in 20 min · prayed?" — unless you've already marked 
 <img src="store/screenshots/vivoactive5-week.png" width="180" alt="Week">
 </p>
 
+**Connect IQ Store:** https://apps.garmin.com/apps/168b7832-789e-4c8a-bf38-f791dda716e9 (in review)
+
 ## Features
 
 - **Now** — a crescent across the top of the screen shows how much of the current
